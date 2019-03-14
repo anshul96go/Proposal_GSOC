@@ -1,0 +1,50 @@
+*****************************************************************************************************************************************************
+Objectives
+
+1. Addition of functions for testing in animint2 and updation in current animint package. 
+Description: animint uses the functions: test_init(), test_run(), test_exit() which use functions from RSelenium package. RSelenium package was a part of CRAN when the testing method was last updatd but have been removed from CRAN after that. Also, certain binaries required for running tests are also not available readily with github version. Some functions like checkForServer and phantom() are defunct and it is required to change the implementation using docker and other methods.
+
+2. Issue in clickSelect and ShowSelect (animint2)
+Description: animint2 doesn't perform the interactive viz for some cases and gives the error of no interactive variable. The same cases run fine in animint. It has to be looked into detail and be fixed.
+
+3. Changing the scale on basis of selected data  (A suggestion)
+
+4. Issue with clickSelects and linetype in accessing the variabe (animint)
+Description: In case, dataframe is assigned to ggplot and not individual geom element, x and y requires variabes via $ but gives error if df$inter_var is used with clickSelects and linetype
+
+5.  Anyone or more of the items from TO-Do list
+
+6. Inclusion of tests and improving documentation for clickSelect and ShowSelect in terms of variables
+
+Addition of features
+----------------------------
+1.
+3.
+5.
+
+
+
+Bug Fixing
+----------------------------
+1.
+2.
+4.
+
+
+Documentation and Testing
+----------------------------
+6.
+
+
+*****************************************************************************************************************************************************
+Timeline
+
+End of May       | Familiarise with animint2 and animint, work on testing functions updation (obj.1)
+Mid of June		 | Documentation and testing + Correcting the issue with clickSelect and showSelect (obj. 2) 
+End of June      | Start implementing scale change + Prepare of Phase 1 evaluations
+Middle of July	 | Testing and documentation of scale change + familiarise with TO-DO item 
+End of July		 | Addition of TO-Do + Prepare for phase 2 evaluations
+Middle of August | Testing and Documentation of TO-DO + creating examples for additions
+End of August	 | Documentation + Final Evaluation
+
+*****************************************************************************************************************************************************
